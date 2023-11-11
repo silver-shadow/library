@@ -8,6 +8,28 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>Library</h1>
+    </div>
+    <div class="content">
+        <button class="addBook">+ Add book</button>
+        <div class="books" id="books">
+        </div>
+        <dialog>
+            <form method="dialog">
+                <input type="text" id="book_title" placeholder="Title">
+                <input type="text" id="author_name" placeholder="Author">
+                <input type="text" id="no_pages" placeholder="Pages">
+                <div>
+                    <label for="read_status">Read</label>
+                    <input type="checkbox" id="read_status" name="news_letter">
+                </div>
+                <button id="saveBook" type="submit">Save Book</button>
+            </form>
+        </dialog>
+    </div>
+    <div class="footer">
+        <h4>The Odin Project</h4>
+    </div>
 </body>
 </html>
