@@ -123,8 +123,13 @@ addBookButton.addEventListener("click",()=>{
 })
 
 
-const removeButton = document.querySelector('.removeButton');
 
+
+function toggleReadStatus(index) {
+    myLibrary[index].read = !myLibrary[index].read;
+    document.getElementById('books').innerHTML = "";
+    displayBooks();
+}
 
 document.addEventListener('click', function(event) {
     if (event.target.matches('.removeButton')) {
@@ -133,5 +138,9 @@ document.addEventListener('click', function(event) {
 
         // console.log(typeof(clickedElementId));
         // console.log('Clicked element id:', clickedElementId);
+    }
+    if (event.target.matches('.read') || event.target.matches('.not-read')) {
+        const clickedElementId = event.target.parentElement.parentElement.id;
+        toggleReadStatus(clickedElementId);
     }
 });
