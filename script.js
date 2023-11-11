@@ -24,13 +24,14 @@ function createBookCard(book,index)
     const buttonGroup = document.createElement('div');
     const readButton = document.createElement('button');
     const removeButton = document.createElement('button');
+    
     bookCard.classList.add('book-card');
     buttonGroup.classList.add('button-group');
     removeButton.classList.add('removeButton');
     bookCard.setAttribute('id',`${index}`);
     removeButton.setAttribute('id',`${index}`);
 
-    title.textContent = book.title;
+    title.textContent = `"${book.title}"`;
     author.textContent = book.author;
     pages.textContent = `${book.pages} pages`;
     if(book.read==true)

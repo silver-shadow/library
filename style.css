@@ -2,12 +2,56 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: Poppins;
+    margin: 0px;
+}
+
+button,input{
+    font-family: Poppins;
+    border: 0px;
+    font-size: medium;
+    border: 1.5px solid black;
+}
+
+form>input {
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 50x;
+    height: 5vh;
+    width: 15vw;
+}
+
+form>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+form>div>input {
+    height: 20px;
+    width: 20px;
+    accent-color: black;
+}
+
+.addBook {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+dialog {
+    background-color: #f0eef1;
 }
 
 .header {
     flex: 0;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content {
@@ -15,46 +59,73 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #f0eef1;
+    margin: 0px;
 }
 
 .addBook{
     align-self: center;
 }
 
-.books{
+.books {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.3fr));
     align-items: start;
-    gap: 10px;
+    gap: 15px;
+    margin: 0px 20px 20px 20px;
 }
 
-.book-card{
+.book-card {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    padding: 20px 5px 35px 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button-group {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 .not-read {
     background-color: pink;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 .read {
     background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 .removeButton {
     background-color: gray;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+p {
+    margin: 4px;
+    font-size: large;
+}
+
+#saveBook {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 15px 7px 15px;
 }
 
 .footer {
     flex: 0;
     display: flex;
     justify-content: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 dialog {
@@ -64,6 +135,9 @@ dialog {
 dialog form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    min-width: 20vw;
 }
