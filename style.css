@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addBook{
+    align-self: center;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    align-items: start;
+    gap: 10px;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.not-read {
+    background-color: pink;
+}
+
+.read {
+    background-color: lightgreen;
+}
+
+.removeButton {
+    background-color: gray;
+}
+
+.footer {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+}
+
+dialog {
+    border-radius: 10px;
+}
+
+dialog form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
