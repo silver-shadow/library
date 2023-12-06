@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Skranji&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Skranji&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>Library</h1>
+      <h1>Library</h1>
     </div>
     <div class="content">
-        <button class="addBook">+ Add book</button>
-        <div class="books" id="books">
-        </div>
-        <dialog>
-            <form method="dialog">
-                <input type="text" id="book_title" placeholder="Title">
-                <input type="text" id="author_name" placeholder="Author">
-                <input type="text" id="no_pages" placeholder="Pages">
-                <div>
-                    <label for="read_status">Read</label>
-                    <input type="checkbox" id="read_status" name="news_letter">
-                </div>
-                <button id="saveBook" type="submit">Save Book</button>
-            </form>
-        </dialog>
+      <button class="addBook">+ Add book</button>
+      <div class="books" id="books"></div>
+      <dialog>
+        <form method="dialog">
+          <input type="text" id="book_title" placeholder="Title" required />
+          <input type="text" id="author_name" placeholder="Author" required />
+          <input type="text" id="no_pages" placeholder="Pages" required />
+          <div>
+            <label for="read_status">Read</label>
+            <input type="checkbox" id="read_status" name="news_letter" />
+          </div>
+          <button id="saveBook" type="submit">Save Book</button>
+        </form>
+      </dialog>
     </div>
     <div class="footer">
-        <h4>The Odin Project ©</h4>
+      <h4>The Odin Project ©</h4>
     </div>
-</body>
+  </body>
 </html>
